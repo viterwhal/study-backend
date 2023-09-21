@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from study import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.server_ping, name="server_ping"),
 ]
