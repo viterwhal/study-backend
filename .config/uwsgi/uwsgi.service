@@ -3,7 +3,7 @@ Description=uWSGI service
 After=syslog.target
 
 [Service]
-ExecStart=/home/ubuntu/venv/bin/uwsgi -i study-backend/.config/uwsgi/study.ini
+ExecStart=sudo /home/ubuntu/venv/bin/uwsgi -i study-backend/.config/uwsgi/study.ini
 
 Restart=always
 KillSignal=SIGQUIT
